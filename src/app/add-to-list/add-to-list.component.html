@@ -14,35 +14,24 @@
                         
                         <button type="submit" class="btn btn-primary"> Add </button>
 
-                        
-                        
                       </div>
-                      
-                      
                     </div>
-                    
                   </form>
-
-                  
                   <button (click)="deleteAllTodo()" class="btn btn-primary" > Clear </button>
-            
+        
             </div>
-            
           </div>
           <div class="row">
               
               <div class="col-sm">
                   <p class="text-center">{{todo}}</p>
                 </div>
-              
           </div>
-          
         </div>
-      
-    
-    
+        
 <ol>
   <li *ngFor="let listItem of listContents">{{ listItem.text }}
+      
     <button (click) = "deleteTodo(listItem)"class="btn btn-primary">Del</button>
   </li>
 </ol>
