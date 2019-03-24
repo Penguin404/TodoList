@@ -36,4 +36,8 @@ export class AddToListComponent {
   deleteTodo(itemToDelete: ListItem){
     this.listContents = this.listContents.filter(item => item !== itemToDelete)
   }
+
+  deleteAllTodo(){
+    this.listContents = this.listContents.filter(item => item !== item)
+  }
 }
