@@ -28,10 +28,12 @@
                 </div>
           </div>
         </div>
-        
+   
+<div>
 <ol>
   <li *ngFor="let listItem of listContents">{{ listItem.text }}
       
     <button (click) = "deleteTodo(listItem)"class="btn btn-primary">Del</button>
   </li>
 </ol>
+</div>

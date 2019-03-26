@@ -7,3 +7,6 @@ form{
     max-width: 25em;
     margin: 1em auto;
 }
+
+div { text-align: center; }
+ol { display:table; margin:0 auto;}

@@ -31,13 +31,14 @@ export class AddToListComponent {
     let newTodo = new ListItem();
     newTodo.text = this.todo;
     this.listContents.push(newTodo);
+    this.todo = ''; /* I added this */
   }
 
   deleteTodo(itemToDelete: ListItem){
     this.listContents = this.listContents.filter(item => item !== itemToDelete)
   }
 
-  deleteAllTodo(){
+  deleteAllTodo(){ /* I added this */
     this.listContents = this.listContents.filter(item => item !== item)
   }
 }
